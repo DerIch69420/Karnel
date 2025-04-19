@@ -71,7 +71,7 @@ enable Datatypes.Strings \\ Allow the use of Strings
 enable Variables \\ Allow use of variables
 enable Functions \\ Allow use of functions
 
-include datatype: Karnel~Datatypes~String \\ Include the string datatype
+include datatype: Karnel~Datatype~String \\ Include the string datatype
 include function: Karnel~IO~Print \\ Include the print function
 
 \\ Create the variable 'message' and assign the String "Hello, World!" to it. 
@@ -98,8 +98,8 @@ After that you can include datatypes. Make sure to enable them before.
 ```
 \\ Strings
 enable Datatypes.Strings
-include datatype: Karnel~Datatypes~String
+include datatype: Karnel~Datatype~String
 \\ Or use arrays of chars
 \\ enable Datatypes.Arrays.Chars
-\\ include datatype: Karnel~Datatypes~Array~Char
+\\ include datatype: Karnel~Datatype~Array~Char
 ```
