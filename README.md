@@ -83,3 +83,23 @@ new auto message = "Hello, World!"; type = String
 print; arguments = {message} \\ Curly braces are used for arrays
 ```
 
+## Datatypes
+Datatypes in Karnel are very simple. <br>
+
+To enable them just add this to your program.
+```
+enable Datatypes
+```
+
+After that you can include datatypes. Make sure to enable them before.
+
+### Strings
+
+```
+\\ Strings
+enable Datatypes.Strings
+include datatype: Karnel~Datatypes~String
+\\ Or use arrays of chars
+\\ enable Datatypes.Arrays.Chars
+\\ include datatype: Karnel~Datatypes~Array~Char
+```
