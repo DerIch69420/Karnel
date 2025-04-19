@@ -125,9 +125,15 @@ include datatype: Karnel~Datatype~String~Familyname
 #### Sentences
 ```
 enable Datatypes.Strings.Sentences \\ Enable the use of sentences
-enable Datatypes.Strings.Sentences.Declarative \\ Normal statement like "The cat is grey"
+enable Datatypes.Strings.Sentences.Declarative \\ Normal statement like "The cat is grey."
 enable Datatypes.Strings.Sentences.Interrogative \\ Questions like "Is the cat grey?"
-enable Datatypes.Strings.Sentences.Imperative \\ Commands like "Enable Datatypes.Strings.Sentences"
+enable Datatypes.Strings.Sentences.Imperative \\ Commands like "Dye the cat blue!"
 enable Datatypes.Strings.Sentences.Exclamatory \\ Emotions like "The cat is grey!"
+
+include datatype: Karnel~Datatype~String~Sentence~Declarative
+include datatype: Karnel~Datatype~String~Sentence~Interrogative
+include datatype: Karnel~Datatype~String~Sentence~Imperative
+include datatype: Karnel~Datatype~String~Sentence~Exclamatory
+
 ```
 > ⚠️ Mixing sentence types in one line will result in a ```GrammarViolationException```.
