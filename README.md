@@ -138,6 +138,17 @@ include datatype: Karnel~Datatype~String~Sentence~Exclamatory
 ```
 > ⚠️ Mixing sentence types in one line will result in a ```GrammarViolationException```.
 
+#### Passwords
+```
+enable Datatypes.Strings.Passwords \\ Enable use of passwords
+enable Datatypes.Strings.Passwords.Safe \\ Safe passwords
+enable Datatypes.Strings.Passwords.Unsafe \\ Unsafe passwords
+
+include datatype: Karnel~Datatype~String~Password
+include datatype: Karnel~Datatype~String~Password~Safe
+include datatype: Karnel~Datatype~String~Password~Unsafe
+```
+
 ### Booleans
 To use booleans include this in your program.
 ```
