@@ -145,6 +145,7 @@ enable Datatypes.Booleans
 include datatype: Karnel~Datatype~Boolean
 ```
 
+#### Normal booleans
 In Karnel a boolean can have one of 69 states.
 ```
 enable Datatypes.Booleans.True              \\ 1: Definitely True
@@ -218,5 +219,9 @@ enable Datatypes.Booleans.Divided           \\ 68: Even Karnel can't decide
 enable Datatypes.Booleans.Transitional      \\ 69: Between two truths
 ```
 
+#### Double booleans
+Double booleans can have two states at once.
 
+#### Quadrouple booleans
+Quadrouple booleans can have four states at once.
 
