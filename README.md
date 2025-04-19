@@ -225,3 +225,14 @@ Double booleans can have two states at once.
 #### Quadrouple booleans
 Quadrouple booleans can have four states at once.
 
+### Random
+
+The random datatype is very powerful and can make your code behave like intended.
+```
+enable Datatypes.Random
+enable Datatypes.Random.Integer  \\ Random integers
+enable Datatypes.Random.Float    \\ Random floating point numbers
+enable Datatypes.Random.String   \\ Random strings
+enable Datatypes.Random.Boolean  \\ Random boolean 
+enable Datatypes.Random.Password \\ Random password
+```
