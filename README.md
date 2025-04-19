@@ -95,11 +95,39 @@ After that you can include datatypes. Make sure to enable them before.
 
 ### Strings
 
+To use strings, put this into your program.
 ```
-\\ Strings
 enable Datatypes.Strings
 include datatype: Karnel~Datatype~String
 \\ Or use arrays of chars
 \\ enable Datatypes.Arrays.Chars
 \\ include datatype: Karnel~Datatype~Array~Char
 ```
+
+There are also special string types.
+
+#### Names
+```
+enable Datatypes.Strings.Names \\ To activate the use of names
+
+enable Datatypes.Strings.Names.Firstnames \\ Firstname
+enable Datatypes.Strings.Names.Secondnames \\ Secondname
+\\ Karnel does not support third names.
+\\ If you have a third name you're out of luck.
+
+enable Datatypes.Strings.Names.Familynames \\ Familyname
+
+include datatype: Karnel~Datatype~String~Firstname
+include datatype: Karnel~Datatype~String~Secondname
+include datatype: Karnel~Datatype~String~Familyname
+```
+
+#### Sentences
+```
+enable Datatypes.Strings.Sentences \\ Enable the use of sentences
+enable Datatypes.Strings.Sentences.Declarative \\ Normal statement like "The cat is grey"
+enable Datatypes.Strings.Sentences.Interrogative \\ Questions like "Is the cat grey?"
+enable Datatypes.Strings.Sentences.Imperative \\ Commands like "Enable Datatypes.Strings.Sentences"
+enable Datatypes.Strings.Sentences.Exclamatory \\ Emotions like "The cat is grey!"
+```
+> ⚠️ Mixing sentence types in one line will result in a ```GrammarViolationException```.
