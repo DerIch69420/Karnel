@@ -161,7 +161,7 @@ In Karnel a boolean can have one of 69 states.
 ```
 enable Value.Boolean.True              \\ 1: Definitely True
 enable Value.Boolean.False             \\ 2: Definitely False
-enable Value.Boolean.Maybe             \\ 3: Maybe (Schrödinger's answer)
+enable Value.Boolean.Maybe             \\ 3: Maybe
 enable Value.Boolean.Probably          \\ 4: Likely, but no promises
 enable Value.Boolean.ProbablyNot       \\ 5: Doubtful
 enable Value.Boolean.Unknown           \\ 6: Nobody knows
@@ -246,4 +246,13 @@ enable Datatypes.Random.Float    \\ Random floating point numbers
 enable Datatypes.Random.String   \\ Random strings
 enable Datatypes.Random.Boolean  \\ Random boolean 
 enable Datatypes.Random.Password \\ Random password
+```
+
+### None
+In Karnel you can use the ```None``` datatype.
+
+```
+enable Datatypes.None
+
+include datatype: Karnel~Datatype~None
 ```
